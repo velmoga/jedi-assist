@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { supabase } from '../lib/supabase'
-import type { Task, Tag, TaskWithTags, ViewType } from '../types/database'
+import type { Task, TaskWithTags, ViewType } from '../types/database'
 
 export function useTasks(view: ViewType) {
   const [tasks, setTasks] = useState<TaskWithTags[]>([])
